@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "home/css/index.css" %}">
+
+    <title>Event Report Generator</title>
+</head>
+
+<!--navbar-->
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'GeneratePDF' %}">Create New Doc And Generate PDF</a>
+      </li><br>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'Search' %}">Search</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'Edit' %}">Edit</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'analyze_options' %}">Analyze<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'email' %}">Send Report Through Email<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'Details' %}">Get Details of Event In Doc<span class="sr-only">(current)</span></a>
+      </li>
+       </ul>
+  </div>
+</nav>
+</body>
+<!--navbar-->
+</html>

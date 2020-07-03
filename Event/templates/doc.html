@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head> 
+        <title>Event Report</title>
+        <style type="text/css">
+            body {
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .header {
+
+                font-size: 20px;
+                font-weight: 100;
+                text-align: center;
+                color: #007cae;
+            }
+            .title {
+                font-size: 22px;
+                font-weight: 100;
+               /* text-align: right;*/
+               padding: 10px 20px 0px 20px;  
+            }
+            .title span {
+                color: #007cae;
+            }
+            .details {
+                padding: 10px 20px 0px 20px;
+                text-align: left !important;
+                /*margin-left: 40%;*/
+            }
+            .hrItem {
+                border: none;
+                height: 1px;
+                /* Set the hr color */
+                color: #333; /* old IE */
+                background-color: #fff; /* Modern Browsers */
+            }
+        </style>
+    </head>
+    <body>
+    <img src="{{pccoe_logo.png}}" alt ="pccoe"></img> 
+    <p><h3 align="center">Department Of Computer Engineering<center></h3></p>
+    <p><h6 align="right"><script>document.write(new Date().toLocalDateString());</script></h4></p>
+    <p align="left">To,<br>The Principal,<br>Pimpri Chinchwad College Of Engineering,<br>Nigdi,Pune-44</p>
+    
+        <div class='wrapper'>
+            <div class='header'>
+                <p class='title'></p>
+            </div>
+        <div>
+        <div class='details'>
+            
+            Event Name:{{EventName}}<br>
+            Sub Event Name:{{SubEventName}}<br>
+            Event Date:{{EventDate}}<br>
+            Budget:{{Budget}}<br>
+            Description:{{Description}}<br>
+            No Of Participants:{{NoOfParticipants}}<br>
+            Outcomes:{{Outcomes}}<br>
+            {% comment %} {% for event in event_images %} 
+            <div class="col-md-4">  
+                     <img src="{{ event.event_Img.url }}" class="img-responsive" style="width: 100%; float: left; margin-right: 10px;" /> 
+            </div> 
+            {% endfor %}  {% endcomment %}
+            {% comment %} Photo :img src="{{ obj1.Photo.url}}" {% endcomment %}
+            <hr class='hrItem' />
+        </div>
+    </div>
+    </body>
+</html>

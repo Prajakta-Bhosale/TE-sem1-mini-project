@@ -1,0 +1,48 @@
+.post_form
+{
+    border: 2px solid black;
+    width: 80%;
+    height: 80%;
+    padding: 2%;
+    margin: 10%;
+}
+
+
+.apost
+{
+    margin:2%;
+}
+
+nav
+{
+    margin:2px;
+}
+
+.register
+{
+    border: 2px solid black;
+    text-align: left;
+    height: 60%;
+    width:60%;
+    margin: 2%;
+    padding: 2%;
+    background-color: #E8E8E8;
+
+}
+
+.product
+{
+        position: relative;
+        float: left;
+        width:  100px;
+        height: 100px;
+        background-position: 50% 50%;
+        background-repeat:   no-repeat;
+        background-size:     cover;
+  
+}
+
+input
+{
+    width:50%;
+}
